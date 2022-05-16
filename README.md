@@ -103,14 +103,13 @@ Takes state and action as input and returns next state with considering below co
 
 ![image](https://user-images.githubusercontent.com/99514564/168621181-c1b32503-c8ec-4bdf-9127-0026e0a46c0f.png)
 
- **Reward function: -8**
+**Reward function:-**
 Assessment requires to determine what action is to be taken to minimize loss and maximize benefits. The reward, r(s, a), in our system for taking an action a ∈ A at a given state s ∈ S is computed as follows.
 
 ![image](https://user-images.githubusercontent.com/99514564/168621296-6f7f64b3-a534-46b3-8391-dc720f1cf8e2.png)
 ![image](https://user-images.githubusercontent.com/99514564/168621327-73698b29-d812-439a-b458-df1f8392f3a6.png)
  
-**Cab Driver DQN Agent: -**
-
+ **Cab Driver DQN Agent: -**
 ![image](https://user-images.githubusercontent.com/99514564/168621391-a580ba7d-707b-46ed-8ff9-7c18e7f08890.png)
 
 In Agent class we need to work on below functions are
@@ -118,12 +117,14 @@ In Agent class we need to work on below functions are
 •	Creating a neural-network model.
 •	Define epsilon-greedy strategy.
 •	Appends the recent experience state, action, reward, new state to the memory.
-•	Build the DQN model using the updated input and output batch. Hyperparameters: -
-We can tweak these parameters for better performance.
- 
-Neural Network Model: -
+•	Build the DQN model using the updated input and output batch.
 
-![image](https://user-images.githubusercontent.com/99514564/168621460-b378cd9e-8454-40f3-8854-6ea49ddc1737.png)
+Hyperparameters: -
+We can tweak these parameters for better performance.
+![image](https://user-images.githubusercontent.com/99514564/168623069-9dfdbb6b-726a-4b43-b805-b83f4f971ffa.png)
+
+Neural Network Model: -
+![image](https://user-images.githubusercontent.com/99514564/168623124-6257ef45-c375-4b26-a119-c1e0bd4fd158.png)
  
 Using keras we build a sequential model by adding dense layers.
 We have provided state as input at the first layer with relu nonlinear activation function and then added hidden layers for better learning with relu activation function.
