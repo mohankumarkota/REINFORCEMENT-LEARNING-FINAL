@@ -20,7 +20,6 @@ Training totally depends purely on the epsilon-function that we choose. If it de
 **Assumptions:-**
 
 1.	The taxis are electric cars. It can run for 30 days non-stop, i.e., 24*30 hours. Then it needs to recharge itself. If the cab driver is completing his trip at that time, he will finish that trip and then stop for recharging.
-
 2.	All decisions will be made at hourly intervals. We won’t consider minutes and seconds for this project. So, for example, suppose   the cab driver gets request at 10 PM then at 9PM and so on. He can decide to pick among the requests only at these times. A request cannot come at 9.30 PM.
 3.	The time taken to travel from one place to another is considered in integer hours only and is dependent on the traffic. Also, the traffic is dependent on the hour-of-the-day and the day-of-the- week.
 
@@ -35,22 +34,22 @@ In here RL is well known as semi-supervised model in machine learning and it is 
 
 ![image](https://user-images.githubusercontent.com/99514564/168620202-4fed4288-dd3b-4f6b-aa0c-0be210ad0f04.png)
 
-. Applications areas of RL: -
-•	Personalized Recommendations
-•	Games
-•	Deep Learning
-•	Robotics
-•	Business
-•	Manufacturing
-•	Finance sectors
+•Applications areas of RL: -
+1. Personalized Recommendations
+2.	Games
+3.	Deep Learning
+4.	Robotics
+5.  Business
+6.  Manufacturing
+7.  Finance sectors
 
 ![image](https://user-images.githubusercontent.com/99514564/168620498-c8f6b23a-e083-4dbd-855b-3ff36fc4e6e1.png)
 
 **Challenges:-**
 
-•	Reinforcement learning’s key challenge is to plan the simulation environment, which relies heavily on the task to be performed.
-•	Transferring the model from the training setting to the real world becomes problematic.
-•	Scaling and modifying the agent’s neural network is another problem.
+1.	Reinforcement learning’s key challenge is to plan the simulation environment, which relies heavily on the task to be performed.
+2.  Transferring the model from the training setting to the real world becomes problematic.
+3.  Scaling and modifying the agent’s neural network is another problem.
 
 Reinforcement is done with rewards according to the decisions made; it is possible to always learn continuously from interactions with the environment. With each correct action, we will have positive rewards and penalties for incorrect decisions. In the industry, this type of learning can help optimize processes, simulations, monitoring, maintenance, and the control of autonomous systems.
  
@@ -59,9 +58,9 @@ Reinforcement is done with rewards according to the decisions made; it is possib
 
 In mathematics, a Markov decision process (MDP) is a discrete-time theoretical control process. It provides a mathematical framework for modeling decision making in situations where their outcomes are partly random and partly under the control of a decision maker.
 A Markov decision process is a 4-tuple (S, A, P_a, R_a), where:
-•	S is a set of states called the state space,
-•	A is a set of actions called the action space (alternatively, A_s is the set of actions available from state s),
-•	P(s, s')= Pr(s_t+1=s'|s_t=s, a_t=a) is the probability that action a in state s at time t will lead to state s' at time t+1,
+1. S is a set of states called the state space,
+2. A is a set of actions called the action space (alternatively, A_s is the set of actions available from state s),
+3. P(s, s')= Pr(s_t+1=s'|s_t=s, a_t=a) is the probability that action a in state s at time t will lead to state s' at time t+1,
 •	R_a(s, s') is the immediate reward (or expected immediate reward) received after transitioning from state s to state s', due to action a
 The state and action spaces may be finite or infinite, for example the set of real numbers. Some processes with countably infinite state and action spaces can be reduced to ones with finite state and action spaces.
 A policy function pi is a (potentially probabilistic) mapping from state space to action space.
@@ -72,8 +71,8 @@ A policy function pi is a (potentially probabilistic) mapping from state space t
  
 Q-learning is a simple yet quite powerful algorithm to create a cheat sheet for our agent. This helps the agent to figure out exactly which action to be performed.
 This presents two problems:
-•	Here in First, the amount of memory required to save and update that table would increase as the  number of states increases.
-•	Second, the amount of time required to explore each state to create the required Q-table would be unrealistic.
+1. Here in First, the amount of memory required to save and update that table would increase as the  number of states increases.
+2. Second, the amount of time required to explore each state to create the required Q-table would be unrealistic.
 In deep Q-learning, we use a neural network to approximate the Q-value function. The state is given as the input and the Q-value of all possible actions is generated as the output. The comparison between Q-learning & deep Q-learning is wonderfully illustrated as below.
 
 ![image](https://user-images.githubusercontent.com/99514564/168620805-6f3edd29-dc2f-4a4c-ad99-03b984ba6b9d.png)
@@ -113,11 +112,11 @@ Assessment requires to determine what action is to be taken to minimize loss and
 ![image](https://user-images.githubusercontent.com/99514564/168621391-a580ba7d-707b-46ed-8ff9-7c18e7f08890.png)
 
 In Agent class we need to work on below functions are
-•	Assigning hyperparameters
-•	Creating a neural-network model.
-•	Define epsilon-greedy strategy.
-•	Appends the recent experience state, action, reward, new state to the memory.
-•	Build the DQN model using the updated input and output batch.
+1. Assigning hyperparameters
+2. Creating a neural-network model.
+3. Define epsilon-greedy strategy.
+4. Appends the recent experience state, action, reward, new state to the memory.
+5. Build the DQN model using the updated input and output batch.
 
 Hyperparameters: -
 We can tweak these parameters for better performance.
@@ -141,8 +140,8 @@ Appends the recent experience state, action, reward, new state to the memory wit
 
 Model continuously update strategies to learn a strategy that maximizes long-term cumulative rewards.
 Below two are the performance matrices for our model.
-•	Q-Value convergence.
-•	Rewards per episode.  
+1. Q-Value convergence.
+2. Rewards per episode.  
  ![image](https://user-images.githubusercontent.com/99514564/168621646-c86a4838-3c0f-4acb-8330-a092fa5b14cb.png)
 
 After few episodes, our agent learns to choose best request with an experience and provides better rewards.
