@@ -1,21 +1,21 @@
-ARTIFICIAL INTELLIGENCE FINAL PROJECT
-On
-RL-BASED SYSTEM FOR ASSISTING CAB DRIVERS
+                                                     # ARTIFICIAL INTELLIGENCE FINAL PROJECT
+                                                                    #On
+                                                    #RL-BASED SYSTEM FOR ASSISTING CAB DRIVERS
+
+ 
+                                                                 Submitted By 
+                                                            Chakra Mohan Kumar Kota
+                                                              Krishna Rao Kundeti
 
 
-Submitted By 
-                              Chakra Mohan Kumar Kota
-                                  Krishna Rao Kundeti
 
-
-
-Under the Guidance of
-VAHID BEHZADAN (Assistant Professor)
+                                                             Under the Guidance of
+                                                        VAHID BEHZADAN (Assistant Professor)
 
 
 
  
-Project Objective:-
+**Project Objective:-**
 
 
 
