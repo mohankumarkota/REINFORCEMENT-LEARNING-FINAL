@@ -1,29 +1,13 @@
-                                                     # ARTIFICIAL INTELLIGENCE FINAL PROJECT
-                                                                    #On
-                                                    #RL-BASED SYSTEM FOR ASSISTING CAB DRIVERS
-
- 
-                                                                 Submitted By 
-                                                            Chakra Mohan Kumar Kota
-                                                              Krishna Rao Kundeti
-
-
-
-                                                             Under the Guidance of
-                                                        VAHID BEHZADAN (Assistant Professor)
-
-
-
- 
+# RL-BASED SYSTEM FOR ASSISTING CAB DRIVERS
+                                                          
 **Project Objective:-**
-
-
 
 Reinforcement learning based system is for assisting the cab drivers which can enables a driver, to choose the rides which are likely to optimize the total profit earned by him at end of the day and daily   profits by improving for their decision-making process on the field.
 
 In this highly aggressive industry, detention of good cab drivers is more significant in business. Cab drivers will like most people who are boosted up by their healthy growth in their income. But with the recent ramble in electricity prices (all cabs are electric), many drivers complain that although their incomes are gradually increasing but their profits are almost unbroken. Thus, it is important that drivers choose for their 'right' rides for example, let us suppose say that a driver gets three ride requests at 11 PM. The first one is a long-distance ride assure high fare, but it will take him to a location which is unlikely to get him another ride for the next few hours. The second one ends in a better location, but it requires him to take a slight diversion to pick the customer up, adding to fuel costs. Perhaps the best choice is to choose the third one, which although is medium distance, it will likely get him another ride subsequently and avoid most of the traffic.
 
-APPROACH: -
+**APPROACH:-**
+
 In our project, that we need to create an environment and an RL agent that will learn to choose the  request that We need to train our agent using Deep Q-learning (DQN).
 Goals: -
 Create the environment:
@@ -33,17 +17,16 @@ Building an agent that will learns to pick the best request using DQN that We ca
 Training totally depends purely on the epsilon-function that we choose. If it decays fast, it won’t let our model explore as much and the Q-values will converge early but to suboptimal values. If it decays slowly, our model will converge slowly.
 
 
-Assumptions: -
+**Assumptions:-**
+
 1.	The taxis are electric cars. It can run for 30 days non-stop, i.e., 24*30 hours. Then it needs to recharge itself. If the cab driver is completing his trip at that time, he will finish that trip and then stop for recharging.
 
 2.	All decisions will be made at hourly intervals. We won’t consider minutes and seconds for this project. So, for example, suppose   the cab driver gets request at 10 PM then at 9PM and so on. He can decide to pick among the requests only at these times. A request cannot come at 9.30 PM.
 3.	The time taken to travel from one place to another is considered in integer hours only and is dependent on the traffic. Also, the traffic is dependent on the hour-of-the-day and the day-of-the- week.
 
 
-Reinforcement Learning: -
-
-
- 
+**Reinforcement Learning:-**
+![image](https://user-images.githubusercontent.com/99514564/168619880-b7e71324-53da-45d9-b835-b1c28b726d2e.png)
 
 Reinforcement Learning is a subset of machine learning. It also enables an agent to learn through the      consequences of an actions in a specific environment and also it is the area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of reward.
 It also differs from other forms of supervised learning because the sample data set does not train the machine. Instead, it learns by trial and error. Therefore, a series of right decisions would be the method as it better solves the problem.
@@ -58,12 +41,8 @@ In here RL is well known as semi-supervised model in machine learning and it is 
 •	Manufacturing
 •	Finance sectors
 
+**Challenges:-**
 
-
-
- 
-
-Challenges: -
 •	Reinforcement learning’s key challenge is to plan the simulation environment, which relies heavily on the task to be performed.
 •	Transferring the model from the training setting to the real world becomes problematic.
 •	Scaling and modifying the agent’s neural network is another problem.
@@ -71,7 +50,8 @@ Challenges: -
 Reinforcement is done with rewards according to the decisions made; it is possible to always learn continuously from interactions with the environment. With each correct action, we will have positive rewards and penalties for incorrect decisions. In the industry, this type of learning can help optimize processes, simulations, monitoring, maintenance, and the control of autonomous systems.
  
 
-Markov Decision Process:-
+**Markov Decision Process:-**
+
 In mathematics, a Markov decision process (MDP) is a discrete-time theoretical control process. It provides a mathematical framework for modeling decision making in situations where their outcomes are partly random and partly under the control of a decision maker.
 A Markov decision process is a 4-tuple (S, A, P_a, R_a), where:
 	S is a set of states called the state space,
@@ -82,7 +62,7 @@ The state and action spaces may be finite or infinite, for example the set of re
 A policy function pi is a (potentially probabilistic) mapping from state space to action space.
 
 
-Deep Q-Learning: -
+**Deep Q-Learning:-**
  
 Q-learning is a simple yet quite powerful algorithm to create a cheat sheet for our agent. This helps the agent to figure out exactly which action to be performed.
 This presents two problems:
@@ -176,7 +156,7 @@ Q- Value Convergence
 
 
 
-Conclusion: -
+**Conclusion:-**
 We have modeled a RL-Based system agent using Deep Q-Learning Network, which can help cab drivers to maximize their profits by improving agent’s decision-making process. We have plotted Q-value convergence and rewards per episode to understand the model performance. As we increase the number of rides in the system, the collected reward increases.
 
 
